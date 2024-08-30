@@ -1,0 +1,22 @@
+LIKE % --- se usa para buscar registros que contengan un patrón específico. 
+
+LIKE: Indica que estamos buscando un patrón en lugar de una coincidencia exacta.
+%s: Es un marcador de posición para un valor que se proporcionará en tiempo de ejecución.
+En el caso de pymysql y otros módulos de base de datos en Python, %s se usa como un marcador de posición en la consulta SQL que se reemplazará por el valor proporcionado en el momento de la ejecución.
+
+'%' antes del término: Indica que cualquier texto puede preceder al término de búsqueda.
+termino_busqueda: Es el término real de busquedas
+'%' después del término: Indica que cualquier texto puede seguir al término de búsqueda.
+
+ttk.Scrollbar: Crea un widget de barra de desplazamiento usando el módulo ttk, que proporciona estilos más modernos en comparación con el widget Scrollbar de tkinter.
+orient="vertical": Indica que la barra de desplazamiento será vertical.
+command=tree.yview: Asocia la barra de desplazamiento con la vista vertical (yview) del Treeview. Esto permite que la barra de desplazamiento se mueva sincronizadamente con el contenido del Treeview.
+
+
+tree.configure(yscrollcommand=scrollbar_y.set): Configura el Treeview para usar la barra de desplazamiento vertical. yscrollcommand es la opción que se utiliza para vincular el desplazamiento vertical del Treeview con la barra de desplazamiento. scrollbar_y.set es el método que actualiza la posición de la barra de desplazamiento cuando el contenido del Treeview se desplaza.
+
+scrollbar_y.place(...): Utiliza el método place para colocar la barra de desplazamiento dentro del contenedor especificado.
+in_=tree: La barra de desplazamiento se colocará dentro del widget Treeview.
+relx=1.0: Posiciona la barra de desplazamiento en el borde derecho del Treeview. 1.0 significa el 100% del ancho del widget.
+relheight=1.0: La altura de la barra de desplazamiento ocupará el 100% de la altura del Treeview.
+bordermode="outside": Esto asegura que la barra de desplazamiento no se superponga al borde del Treeview, sino que esté colocada justo afuera del borde derecho del Treeview.
